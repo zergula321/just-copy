@@ -1,0 +1,22 @@
+.Skeleton {
+  background-color: silver;
+  height: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+
+each(range(1, 10), {
+  .mb-@{index} {
+    margin-bottom: (@index / 4rem);
+  }
+  .mt-@{index} {
+    margin-top: (@index / 4rem);
+  }
+  .ml-@{index} {
+    margin-left: (@index / 4rem);
+  }
+  .mr-@{index} {
+    margin-right: (@index / 4rem);
+  }
+});
